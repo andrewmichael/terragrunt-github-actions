@@ -95,7 +95,7 @@ function main {
   source ${scriptDir}/terraform_output.sh || exit 1
 
   parseInputs
-  cd ${GITHUB_WORKSPACE}/${tfWorkingDir}
+  cd ${tfWorkingDir}
 
   case "${tfSubcommand}" in
     fmt)
