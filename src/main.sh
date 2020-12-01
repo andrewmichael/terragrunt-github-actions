@@ -97,8 +97,6 @@ function main {
   parseInputs
   cd ${tfWorkingDir}
 
-  ls
-
   case "${tfSubcommand}" in
     fmt)
       installTerraform
