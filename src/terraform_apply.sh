@@ -50,5 +50,7 @@ ${applyOutput}
     echo "${applyPayload}" | curl -s -S -H "Authorization: token ${GITHUB_TOKEN}" --header "Content-Type: application/json" --data @- "${applyCommentsURL}" > /dev/null
   fi
 
+  chmod -R 777 ./.terragrunt-cache
+
   exit ${applyExitCode}
 }
